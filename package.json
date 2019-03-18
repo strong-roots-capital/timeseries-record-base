@@ -1,6 +1,6 @@
 {
   "name": "@strong-roots-capital/timeseries-record-base",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Base interface for a time-series record",
   "main": "dist/timeseries-record-base.js",
   "types": "dist/timeseries-record-base.d.ts",
