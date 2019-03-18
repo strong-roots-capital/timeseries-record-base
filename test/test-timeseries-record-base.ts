@@ -4,10 +4,18 @@ import test from 'ava'
  * Library under test
  */
 
-import timeseriesRecordBase from '../src/timeseries-record-base'
+import TimeseriesRecordBase from '../src/timeseries-record-base'
 
-test('test ava configuration', t => {
+test('record is importable', t => {
     t.pass()
 })
 
-// TODO: write tests
+test('Record is of expected form', t => {
+    function returnRecordBase(): TimeseriesRecordBase {
+        return {
+            Time: 1
+        }
+    }
+    const record: TimeseriesRecordBase = returnRecordBase()
+    t.pass()
+})

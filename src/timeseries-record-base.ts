@@ -5,8 +5,15 @@
 
 
 /**
- * TODO: document
+ * An atomic unit of time-series data of general form.
  */
-export default function timeseriesRecordBase() {
-    // TODO: implement
+interface TimeseriesRecordBase {
+    /**
+     * Time that the current Record began, in units of milliseconds
+     * elapsed since January 1, 1970.
+     */
+    Time: number
 }
+
+
+export default TimeseriesRecordBase
